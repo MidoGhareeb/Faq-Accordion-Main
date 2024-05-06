@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Changa:wght@200..800&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Work Sans", sans-serif;
+    height: 100vh;
+    background-color: hsl(275, 100%, 97%);
+}
+.container{
+    background-color: #fff;
+    width:600px;
+    min-height: fit-content;
+    margin: 170px auto;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 4px 17px 15px 4px rgb(47, 21, 51, 0.1);
+}
+h1,h3{
+    color:rgb(47, 21, 51);
+}
+p{
+    color: rgb(140, 105, 145);
+}
+.hide{
+    display: none;
+}
+hr{
+    border: 1px solid hsl(275, 55%, 96%);
+}
+header{
+    display: flex;
+    margin: 5px 10px 20px 0px;
+}
+header h1{
+    margin-left: 20px;
+    font-size: 40px;
+}
+header img{
+    width: 30px;
+}
+.content{
+    position: relative;
+    margin: 40px 10px;
+}
+.content img{
+    position: absolute;
+    right:10px;
+    top:-5px;
+    cursor: pointer;
+}
+.content p{
+    margin: 20px 0;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+.content h3:hover{
+    color: rgb(173 40 235);
+    cursor: pointer;
+}
+.mentor{
+    text-align: center;
+    margin-top: -140px;
+
+}
+@media screen and (max-width: 414px) {
+    body{
+        background-image: url(background-pattern-mobile.svg);
+        background-repeat:no-repeat;
+        background-size: contain;
+    }
+    .container{
+    width:330px;
+    margin: 140px auto;
+    }
+    .mentor{
+        
+        width: 80%;
+        font-size: 15px;
+        margin: -120px auto 0;
+    }
+    .content img{
+        right:-15px;
+    }
+}
+@media screen and (min-width: 415px) and (max-width: 5000px){
+    body{
+        background-image: url(background-pattern-desktop.svg);
+        background-repeat:no-repeat;
+        background-size: contain;
+    }
+}
